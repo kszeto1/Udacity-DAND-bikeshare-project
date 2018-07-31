@@ -11791,9 +11791,7 @@ div#notebook {
 <li><a href="#conclusions">Conclusions</a></li>
 </ul>
 <p><a id='intro'></a></p>
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><blockquote><p><strong>Tip</strong>: Quoted sections like this will provide helpful instructions on how to navigate and use a Jupyter notebook.</p>
-</blockquote>
-<p>Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world. Bicycle-sharing systems allow users to rent bicycles for short trips, typically 30 minutes or less. Thanks to the rise in information technologies, it is easy for a user of the system to access a dock within the system to unlock or return bicycles. These technologies also provide a wealth of data that can be used to explore how these bike-sharing systems are used.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world. Bicycle-sharing systems allow users to rent bicycles for short trips, typically 30 minutes or less. Thanks to the rise in information technologies, it is easy for a user of the system to access a dock within the system to unlock or return bicycles. These technologies also provide a wealth of data that can be used to explore how these bike-sharing systems are used.</p>
 <p>In this project, you will perform an exploratory analysis on data provided by <a href="https://www.motivateco.com/">Motivate</a>, a bike-share system provider for many major cities in the United States. You will compare the system usage between three large cities: New York City, Chicago, and Washington, DC. You will also see if there are any differences within each system for those users that are registered, regular users and those users that are short-term, casual users.</p>
 
 </div>
@@ -11807,8 +11805,6 @@ div#notebook {
 <h2 id="Posing-Questions">Posing Questions<a class="anchor-link" href="#Posing-Questions">&#182;</a></h2><p>Before looking at the bike sharing data, you should start by asking questions you might want to understand about the bike share data. Consider, for example, if you were working for Motivate. What kinds of information would you want to know about in order to make smarter business decisions? If you were a user of the bike-share service, what factors might influence how you would want to use the service?</p>
 <p><strong>Question 1</strong>: What time and day are most people renting bicycles? What percentage of Motivate's revenue comes from registered users and casual users?</p>
 <p><strong>Answer</strong>: I think afternoons and weekends starting on Friday will be most impacted. Figuring this out will help better manage during peak rental times. I would say most revenue comes fromo casual users. Let's say more than 50% of revenue from casual users.</p>
-<blockquote><p><strong>Tip</strong>: If you double click on this cell, you will see the text change so that all of the formatting is removed. This allows you to edit this block of text. This block of text is written using <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>, which is a way to format text using headers, links, italics, and many other options using a plain-text syntax. You will also use Markdown later in the Nanodegree program. Use <strong>Shift</strong> + <strong>Enter</strong> or <strong>Shift</strong> + <strong>Return</strong> to run the cell and show its rendered form.</p>
-</blockquote>
 
 </div>
 </div>
@@ -11826,8 +11822,6 @@ div#notebook {
 </ul>
 <p>If you visit these pages, you will notice that each city has a different way of delivering its data. Chicago updates with new data twice a year, Washington DC is quarterly, and New York City is monthly. <strong>However, you do not need to download the data yourself.</strong> The data has already been collected for you in the <code>/data/</code> folder of the project files. While the original data for 2016 is spread among multiple files for each city, the files in the <code>/data/</code> folder collect all of the trip data for the year into one file per city. Some data wrangling of inconsistencies in timestamp format within each city has already been performed for you. In addition, a random 2% sample of the original data is taken to make the exploration more manageable.</p>
 <p><strong>Question 2</strong>: However, there is still a lot of data for us to investigate, so it's a good idea to start off by looking at one entry from each of the cities we're going to analyze. Run the first code cell below to load some packages and functions that you'll be using in your analysis. Then, complete the second code cell to print out the first trip recorded from each of the cities (the second line of each data file).</p>
-<blockquote><p><strong>Tip</strong>: You can run a code cell like you formatted Markdown cells above by clicking on the cell and using the keyboard shortcut <strong>Shift</strong> + <strong>Enter</strong> or <strong>Shift</strong> + <strong>Return</strong>. Alternatively, a code cell can be executed using the <strong>Play</strong> button in the toolbar after selecting it. While the cell is running, you will see an asterisk in the message to the left of the cell, i.e. <code>In [*]:</code>. The asterisk will change into a number to show that execution has completed, e.g. <code>In [1]</code>. If there is output, it will show up as <code>Out [1]:</code>, with an appropriate number to match the "In" number.</p>
-</blockquote>
 
 </div>
 </div>
@@ -12245,8 +12239,6 @@ OrderedDict([(&#39;duration&#39;, &#39;13.983333333333333&#39;),
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Tip</strong>: If you save a jupyter Notebook, the output from running code blocks will also be saved. However, the state of your workspace will be reset once a new session is started. Make sure that you run all of the necessary code blocks from your previous session to reestablish variables and functions before picking up where you last left off.</p>
-</blockquote>
 <p><a id='eda'></a></p>
 <h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">&#182;</a></h2><p>Now that you have the data collected and wrangled, you're ready to start exploring the data. In this section you will write some code to compute descriptive statistics from the data. You will also be introduced to the <code>matplotlib</code> library to create some basic histograms of the data.</p>
 <p><a id='statistics'></a></p>
@@ -12345,8 +12337,6 @@ Washington trips:  (51753, 14573, 66326, 0.7802822422579381, 0.21971775774206193
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Tip</strong>: In order to add additional cells to a notebook, you can use the "Insert Cell Above" and "Insert Cell Below" options from the menu bar above. There is also an icon in the toolbar for adding new cells, with additional icons for moving the cells up and down the document. By default, new cells are of the code type; you can also specify the cell type (e.g. Code or Markdown) of selected cells from the Cell menu or the dropdown in the toolbar.</p>
-</blockquote>
 <p>Now, you will write your own code to continue investigating properties of the data.</p>
 <p><strong>Question 4b</strong>: Bike-share systems are designed for riders to take short trips. Most of the time, users are allowed to take trips of 30 minutes or less with no additional charges, with overage charges made for trips of longer than that duration. What is the average trip length for each city? What proportion of rides made in each city are longer than 30 minutes?</p>
 <p><strong>Answer</strong>:</p>
@@ -12368,12 +12358,6 @@ Washington trips:  (51753, 14573, 66326, 0.7802822422579381, 0.21971775774206193
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Use this and additional cells to answer Question 4b.                 ##</span>
-<span class="c1">##                                                                      ##</span>
-<span class="c1">## HINT: The csv module reads in all of the data as strings, including  ##</span>
-<span class="c1">## numeric values. You will need a function to convert the strings      ##</span>
-<span class="c1">## into an appropriate numeric type before you aggregate data.          ##</span>
-<span class="c1">## TIP: For the Bay Area example, the average trip length is 14 minutes ##</span>
-<span class="c1">## and 3.5% of trips are longer than 30 minutes.                        ##</span>
 <span class="k">def</span> <span class="nf">average_trip_length</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function calculates average trip length among all </span>
@@ -13024,11 +13008,6 @@ Chicago average trip length:  (16.563629368787335, 12.067201690250076, 30.979781
 <h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><p>Congratulations on completing the project! This is only a sampling of the data analysis process: from generating questions, wrangling the data, and to exploring the data. Normally, at this point in the data analysis process, you might want to draw conclusions about the data by performing a statistical test or fitting the data to a model for making predictions. There are also a lot of potential analyses that could be performed on the data which are not possible with only the data provided. For example, detailed location data has not been investigated. Where are the most commonly used docks? What are the most common routes? As another example, weather has potential to have a large impact on daily ridership. How much is ridership impacted when there is rain or snow? Are subscribers or customers affected more by changes in weather?</p>
 <p><strong>Question 7</strong>: Putting the bike share data aside, think of a topic or field of interest where you would like to be able to apply the techniques of data science. What would you like to be able to learn from your chosen subject?</p>
 <p><strong>Answer</strong>: I think data science techniques applied to the medical field could provide numerous benefits. Insight into the medicine that is working, poorly treated neighborhoods that need aid, where medicine is losing money, and other solutions. Data science techniques could benefit the field and honestly help me understand the medical field better as well.</p>
-<blockquote><p><strong>Tip</strong>: If we want to share the results of our analysis with others, we aren't limited to giving them a copy of the jupyter Notebook (.ipynb) file. We can also export the Notebook output in a form that can be opened even for those without Python installed. From the <strong>File</strong> menu in the upper left, go to the <strong>Download as</strong> submenu. You can then choose a different format that can be viewed more generally, such as HTML (.html) or
-PDF (.pdf). You may need additional packages or software to perform these exports.</p>
-<p>If you are working on this project via the Project Notebook page in the classroom, you can also submit this project directly from the workspace. <strong>Before you do that</strong>, you should save an HTML copy of the completed project to the workspace by running the code cell below. If it worked correctly, the output code should be a 0, and if you click on the jupyter icon in the upper left, you should see your .html document in the workspace directory. Alternatively, you can download the .html copy of your report following the steps in the previous paragraph, then <em>upload</em> the report to the directory (by clicking the jupyter icon).</p>
-<p>Either way, once you've gotten the .html report in your workspace, you can complete your submission by clicking on the "Submit Project" button to the lower-right hand side of the workspace.</p>
-</blockquote>
 
 </div>
 </div>
